@@ -54,13 +54,11 @@ header {
       color: $white;
       display: block;
       font-weight: 700;
-      padding: 55px 22px;
-      baseline: none;
+      padding: 55px 20px;
 
       &:hover {
         background-color: darken($background-color, 10%);
       }
-
       .menu-list__national-team {
         .inner {
           position: absolute;
@@ -70,7 +68,7 @@ header {
           display: flex;
           flex-wrap: wrap;
           box-sizing: border-box;
-          display: none;
+          display: none; /* 바꿀곳 */
         }
       }
     }
@@ -122,7 +120,7 @@ header {
           display: flex;
           align-items: center;
           padding-left: 5px;
-          display: none;
+          display: none; /* 바꿀곳 */
         }
       }
     }
@@ -147,21 +145,19 @@ header {
   .menu {
     .menu-list {
       .menu-list__acaive {
-        &:hover {
-          background-color: darken($background-color, 10%);
-        }
         .inner {
+          display: none; /* 바꿀곳 */
           height: 400px;
           border: 1px solid $hover-color;
           .sub-menu__international {
             display: flex;
             flex-grow: 1.7;
             padding: 10px;
-
+            border-right: 1px solid $hover-color;
             h3 {
               display: inline-block;
               font-size: 25px;
-              margin-right: 30px;
+              margin: 10px 30px 0 10px;
             }
             ul {
               margin: 10px 20px 20px 10px;
@@ -173,6 +169,49 @@ header {
               }
             }
           }
+          .sub-menu__national {
+            flex-grow: 1.5;
+            display: flex;
+            padding: 10px;
+            border-right: 1px solid $hover-color;
+            h3 {
+              display: inline-block;
+              font-size: 25px;
+              margin: 10px 30px 0 10px;
+            }
+            ul {
+              margin: 0px 20px 20px 10px;
+              font-size: 18px;
+              flex-grow: 0.7;
+              li {
+                margin-top: 10px;
+              }
+              &:first-child {
+                margin-top: 0;
+              }
+            }
+          }
+          .sub-menu__record {
+            flex-grow: 1.5;
+            display: flex;
+            padding: 10px;
+            h3 {
+              display: inline-block;
+              font-size: 25px;
+              margin: 10px 30px 0 10px;
+            }
+            ul {
+              margin: 0px 20px 20px 10px;
+              font-size: 18px;
+              flex-grow: 0.7;
+              li {
+                margin-top: 10px;
+              }
+              &:first-child {
+                margin-top: 0;
+              }
+            }
+          }
         }
       }
     }
@@ -181,17 +220,98 @@ header {
 
 header {
   .menu {
+    .menu-list__KFA {
+      .inner {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        margin-left: -600px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+
+header {
+  .menu {
     .menu-list {
-      .menu-list__acaive {
+      .menu-list__KFA {
         .inner {
-          .sub-menu__national {
-            flex-grow: 1.5;
-            display: flex;
-            padding: 10px;
+          display: none; /* 바꿀곳 */
+          height: 400px;
+          border: 1px solid $hover-color;
+
+          .sub-menu__introduce {
+            /* 여기 다섯가지 항목을 만들면서 뭔가 하나하나만드는 느낌이 이상함 */
+            flex-grow: 1;
+            padding: 20px 0 0 20px;
+            width: 150px;
+            border-right: 1px solid $hover-color;
             h3 {
-              display: inline-block;
+              display: block;
               font-size: 25px;
-              margin-right: 30px;
+            }
+
+            li {
+              margin-top: 20px;
+              font-size: 12px;
+            }
+          }
+          .sub-menu__association {
+            flex-grow: 1;
+            padding: 20px 0 0 20px;
+            width: 150px;
+            border-right: 1px solid $hover-color;
+            h3 {
+              display: block;
+              font-size: 25px;
+            }
+            li {
+              margin-top: 20px;
+              font-size: 12px;
+            }
+          }
+          .sub-menu__vision {
+            flex-grow: 1;
+            padding: 20px 0 0 20px;
+            width: 150px;
+            border-right: 1px solid $hover-color;
+            h3 {
+              display: block;
+              font-size: 25px;
+            }
+            li {
+              margin-top: 20px;
+              font-size: 12px;
+            }
+          }
+          .sub-menu__nfc {
+            flex-grow: 1;
+            padding: 20px 0 0 20px;
+            width: 150px;
+            border-right: 1px solid $hover-color;
+            h3 {
+              display: block;
+              font-size: 25px;
+            }
+            li {
+              margin-top: 20px;
+              font-size: 12px;
+            }
+          }
+          .sub-menu__download {
+            flex-grow: 1;
+            padding: 20px 0 0 20px;
+            width: 150px;
+            h3 {
+              display: block;
+              font-size: 25px;
+            }
+            li {
+              margin-top: 20px;
+              font-size: 12px;
             }
           }
         }
@@ -199,20 +319,65 @@ header {
     }
   }
 }
+
+/* BUTTON */
 header {
-  .menu {
-    .menu-list {
-      .menu-list__acaive {
-        .inner {
-          .sub-menu__record {
-            flex-grow: 1.5;
-            display: flex;
-            padding: 10px;
-            h3 {
-              display: inline-block;
-              font-size: 25px;
-              margin-right: 30px;
+  .inner {
+    .menu-btn {
+      height: 120px;
+      display: flex;
+      margin-left: 20px;
+      justify-content: center;
+      align-items: center;
+      // border-left: 1px solid $hover-color;
+
+      .menu-btn__list {
+        display: flex;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid $hover-color;
+          height: 120px;
+          width: 90px;
+          cursor: pointer;
+          a {
+            img {
+              margin: 0 auto;
+              width: 50px;
+              height: 50px;
             }
+          }
+          &:nth-child(2) {
+            a {
+              img {
+                width: 65px;
+                height: 50px;
+              }
+            }
+          }
+          &:nth-child(3) {
+            a {
+              img {
+                width: 25px;
+                height: 25px;
+              }
+            }
+          }
+          &:nth-child(4) {
+            a {
+              img {
+                width: 25px;
+                height: 25px;
+              }
+            }
+          }
+          &:last-child {
+            padding: 0px 10px;
+            border-right: 1px solid $hover-color;
+          }
+          &:hover {
+            background-color: $hover-color;
           }
         }
       }
