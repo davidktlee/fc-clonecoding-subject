@@ -4,13 +4,14 @@ $white: #fff;
 $background-color: #e6002d;
 $hover-color: #840028;
 /* COMMON */
+
 body {
   width: 100%;
   height: 3000px;
+  background-color: #efefef;
 }
 .inner {
   width: 1200px;
-  background-color: $background-color;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -26,7 +27,7 @@ a {
 }
 /* HEADER */
 header {
-  width: 100%;
+  width: 1903px;
   background-color: $background-color;
   position: fixed;
   height: 120px;
@@ -391,11 +392,21 @@ header {
 }
 
 .swiper {
-  width: 100%;
+  width: 1903px;
   height: 720px;
-  position: absolute;
-  top: 120px;
-
+  margin: 0 auto;
+  .swiper-wrapper {
+    position: absolute;
+    top: 120px;
+    height: 100%;
+    .swiper-slide {
+      img {
+        width: 100%;
+        margin: 0 auto;
+        height: 720px;
+      }
+    }
+  }
   .swiper-pagination {
     display: flex;
     justify-content: center;
@@ -431,7 +442,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 2px;
-    background-color: #fff;
+    background-color: $white;
     cursor: pointer;
     &:hover {
       opacity: 0.7;
@@ -444,7 +455,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-right: 1px;
-    background-color: #fff;
+    background-color: $white;
     color: #666;
     font-size: 35px;
     cursor: pointer;
@@ -452,42 +463,30 @@ header {
       opacity: 0.7;
     }
   }
-  .btn-next {
-    width: 46px;
-    height: 46px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    cursor: pointer;
-    &:hover {
-      opacity: 0.7;
-    }
+}
+.btn-next {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
   }
-  .swiper-pagination .swiper-pagination {
-    display: block;
-    bottom: 40px;
-    right: 40px;
-  }
-  .swiper-slide {
-    img {
-      width: 100%;
-      margin: 0 auto;
-      height: 720px;
-    }
-  }
+}
+.swiper-pagination .swiper-pagination {
+  display: block;
+  bottom: 40px;
+  right: 40px;
 }
 
 .notice-menu {
-  position: relative;
+  background-color: #00145a;
+  height: 80px;
   .notice {
-    position: absolute;
-    top: 120px;
-    width: 100%;
-    background-color: #00145a;
-    height: 80px;
     .inner {
-      height: 100%;
       position: absolute;
       display: flex;
       align-items: center;
@@ -533,26 +532,55 @@ header {
   }
 }
 .banner {
-  position: relative;
-  left: 50%;
-  margin-left: -600px;
   a {
-    width: 1180px;
-    height: 104px;
-    background-color: red;
-    position: absolute;
-    top: 200px;
+    img {
+      width: 1180px;
+      height: 104px;
+      background-color: $background-color;
+      margin: 20px auto;
+    }
   }
 }
 .news {
   .inner {
+    width: 1180px;
+    height: 400px;
+    display: flex;
+
     .match-container {
+      flex-grow: 0.7;
       background-color: orange;
+      margin-right: 10px;
+      display: flex;
+      position: relative;
+      box-sizing: border-box;
+      height: 80px;
+      .head {
+        margin: auto 0;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .icons {
+        justify-content: center;
+        margin: auto 0;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        .material-icons {
+          font-size: 35px;
+          margin-right: 15px;
+        }
+      }
     }
     .result-container {
+      flex-grow: 1;
+      height: 100px;
       background-color: orange;
+      margin-right: 10px;
     }
     .notice-container {
+      flex-grow: 0.6;
+      height: 100px;
       background-color: orange;
     }
   }
