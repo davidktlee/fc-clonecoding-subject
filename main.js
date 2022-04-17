@@ -8,7 +8,7 @@ const menuEl = document.querySelector('.menu')
 menuEl.addEventListener('mouseover', menuAdd)
 menuEl.addEventListener('mouseout', menuHide)
 // (선택자, 옵션)
-new Swiper('.swiper', {
+new Swiper('.swiper.first', {
   autoplay: true,
   loop: true,
   pagination: {
@@ -21,5 +21,11 @@ new Swiper('.swiper', {
   },
 })
 
-
-
+new Swiper('.swiper.second', {
+  autoplay: true,
+  loop: true,
+  pagination: {
+    el: '.swiper .swiper-pagination',
+    clickable: true,
+  },
+})
