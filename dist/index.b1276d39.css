@@ -24,19 +24,19 @@ a {
   text-decoration: none;
 }
 
-header {
+.header {
   width: 1903px;
   height: 120px;
-  z-index: 9999;
+  z-index: 15;
   background-color: #e6002d;
   position: fixed;
 }
 
-header .inner {
+.header .inner {
   background-color: #e6002d;
 }
 
-header .inner a img {
+.header .inner a img {
   width: 190px;
   height: 90px;
   margin: 15px 50px 10px 10px;
@@ -450,7 +450,7 @@ header .inner .menu-btn .menu-btn__list li:hover {
 
 .swiper.first .buttons {
   height: 46px;
-  z-index: 9999;
+  z-index: 1;
   display: flex;
   position: absolute;
   bottom: 80px;

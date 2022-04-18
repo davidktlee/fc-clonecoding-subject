@@ -27,12 +27,13 @@ a {
   text-decoration: none;
 }
 /* HEADER */
-header {
+.header {
   width: 1903px;
   background-color: $background-color;
   position: fixed;
   height: 120px;
-  z-index: 9999;
+  z-index: 15;
+
   .inner {
     background-color: $background-color;
     a {
@@ -436,7 +437,7 @@ header {
     bottom: 80px;
     left: 300px;
     height: 46px;
-    z-index: 9999;
+    z-index: 1;
   }
   .description {
     width: 136px;
