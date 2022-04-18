@@ -6,7 +6,7 @@ body {
 
 .inner {
   width: 1200px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -25,10 +25,11 @@ a {
 }
 
 .header {
-  width: 1903px;
+  width: 100%;
   height: 120px;
   z-index: 15;
   background-color: #e6002d;
+  margin: 0 auto;
   position: fixed;
 }
 
@@ -45,6 +46,7 @@ a {
 header .menu {
   height: 120px;
   cursor: pointer;
+  white-space: nowrap;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -158,7 +160,7 @@ header .menu .menu-list__acaive .inner {
   border-top: 1px solid #840028;
   border-left: 1px solid #840028;
   border-right: 1px solid #840028;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-left: -600px;
   display: flex;
   position: absolute;
