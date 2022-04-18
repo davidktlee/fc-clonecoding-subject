@@ -2,10 +2,9 @@
   "name": "fc_clone_subject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "bulid": "parcel build index.html"
+    "dev": "parcel index.html"
   },
   "keywords": [],
   "author": "",
