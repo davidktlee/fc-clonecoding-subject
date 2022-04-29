@@ -10,7 +10,9 @@ menuEl.addEventListener('mouseout', menuHide)
 
 // (선택자, 옵션)
 new Swiper('.swiper.first', {
+  slidesPerViews: 1,
   autoplay: true,
+
   loop: true,
   pagination: {
     el: '.swiper .swiper-pagination',

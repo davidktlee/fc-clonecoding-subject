@@ -2,6 +2,7 @@ body {
   width: 100%;
   height: 3000px;
   background-color: #efefef;
+  font-family: Black Han Sans, sans-serif;
 }
 
 .inner {
@@ -55,7 +56,7 @@ header .menu {
 header .menu .menu-list__kfa-live {
   color: #fff;
   padding: 52px 20px;
-  font-weight: 700;
+  font-weight: bold;
   display: block;
 }
 
@@ -69,8 +70,8 @@ header .menu .menu-list__national-team.hide .inner {
 
 header .menu .menu-list__national-team {
   color: #fff;
-  padding: 55px 20px;
-  font-weight: 700;
+  padding: 52px 20px;
+  font-weight: bold;
   display: block;
 }
 
@@ -94,7 +95,6 @@ header .menu .menu-list__national-team .inner li {
   border-right: 1px solid #840028;
   align-items: center;
   padding-left: 10px;
-  font-size: 14px;
   display: flex;
 }
 
@@ -108,7 +108,7 @@ header .menu .menu-list__competition.hide .inner {
 
 header .menu .menu-list__competition {
   color: #fff;
-  padding: 55px 20px;
+  padding: 52px 20px;
   font-weight: 700;
   display: block;
 }
@@ -145,7 +145,7 @@ header .menu .menu-list__acaive.hide .inner {
 
 header .menu .menu-list__acaive {
   color: #fff;
-  padding: 55px 20px;
+  padding: 52px 20px;
   font-weight: 700;
   display: block;
 }
@@ -177,19 +177,16 @@ header .menu .menu-list__acaive .inner .sub-menu__international {
 
 header .menu .menu-list__acaive .inner .sub-menu__international h3 {
   margin: 10px 30px 0 10px;
-  font-size: 25px;
   display: inline-block;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__international ul {
   flex-grow: .7;
   margin: 10px 20px 20px 10px;
-  font-size: 18px;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__international ul li {
   margin-top: 20px;
-  font-size: 12px;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__national {
@@ -201,14 +198,12 @@ header .menu .menu-list__acaive .inner .sub-menu__national {
 
 header .menu .menu-list__acaive .inner .sub-menu__national h3 {
   margin: 10px 30px 0 10px;
-  font-size: 25px;
   display: inline-block;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__national ul {
   flex-grow: .7;
   margin: 0 20px 20px 10px;
-  font-size: 18px;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__national ul li {
@@ -227,14 +222,12 @@ header .menu .menu-list__acaive .inner .sub-menu__record {
 
 header .menu .menu-list__acaive .inner .sub-menu__record h3 {
   margin: 10px 30px 0 10px;
-  font-size: 25px;
   display: inline-block;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__record ul {
   flex-grow: .7;
   margin: 0 20px 20px 10px;
-  font-size: 18px;
 }
 
 header .menu .menu-list__acaive .inner .sub-menu__record ul li {
@@ -251,7 +244,7 @@ header .menu .menu-list__KFA.hide .inner {
 
 header .menu .menu-list__KFA {
   color: #fff;
-  padding: 55px 20px;
+  padding: 45px 20px;
   font-weight: 700;
   display: block;
 }
@@ -282,13 +275,11 @@ header .menu .menu-list__KFA .inner .sub-menu__introduce {
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__introduce h3 {
-  font-size: 25px;
   display: block;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__introduce li {
   margin-top: 20px;
-  font-size: 12px;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__association {
@@ -299,13 +290,11 @@ header .menu .menu-list__KFA .inner .sub-menu__association {
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__association h3 {
-  font-size: 25px;
   display: block;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__association li {
   margin-top: 20px;
-  font-size: 12px;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__vision {
@@ -316,13 +305,11 @@ header .menu .menu-list__KFA .inner .sub-menu__vision {
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__vision h3 {
-  font-size: 25px;
   display: block;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__vision li {
   margin-top: 20px;
-  font-size: 12px;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__nfc {
@@ -333,13 +320,11 @@ header .menu .menu-list__KFA .inner .sub-menu__nfc {
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__nfc h3 {
-  font-size: 25px;
   display: block;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__nfc li {
   margin-top: 20px;
-  font-size: 12px;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__download {
@@ -349,13 +334,11 @@ header .menu .menu-list__KFA .inner .sub-menu__download {
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__download h3 {
-  font-size: 25px;
   display: block;
 }
 
 header .menu .menu-list__KFA .inner .sub-menu__download li {
   margin-top: 20px;
-  font-size: 12px;
 }
 
 header .inner .menu-btn {
@@ -410,7 +393,6 @@ header .inner .menu-btn .menu-btn__list li:hover {
 }
 
 .swiper.first {
-  width: 1903px;
   height: 720px;
   margin: 0 auto;
 }
@@ -423,7 +405,7 @@ header .inner .menu-btn .menu-btn__list li:hover {
 
 .swiper.first .swiper-wrapper .swiper-slide img {
   width: 100%;
-  height: 720px;
+  height: 600px;
   margin: 0 auto;
 }
 
@@ -482,7 +464,6 @@ header .inner .menu-btn .menu-btn__list li:hover {
   justify-content: center;
   align-items: center;
   margin-right: 1px;
-  font-size: 35px;
   display: flex;
 }
 
@@ -527,7 +508,6 @@ header .inner .menu-btn .menu-btn__list li:hover {
 .notice-menu .notice .inner .menu {
   color: #fff;
   margin-right: 100px;
-  font-size: 35px;
   font-weight: bold;
 }
 
@@ -584,7 +564,6 @@ header .inner .menu-btn .menu-btn__list li:hover {
 }
 
 .news .inner h3 {
-  font-size: 25px;
   font-weight: bold;
 }
 
@@ -1126,7 +1105,6 @@ header .inner .menu-btn .menu-btn__list li:hover {
   color: #666;
   cursor: pointer;
   margin: 40px;
-  font-size: 20px;
 }
 
 .footer .kfa-family .kfa-family__inner li:hover {
