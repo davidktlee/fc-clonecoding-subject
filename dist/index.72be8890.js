@@ -1,8 +1,8 @@
 function menuAdd(e) {
-    e.path[0].classList.remove('hide');
+    e.target.classList.remove('hide');
 }
 function menuHide(e) {
-    e.path[0].classList.add('hide');
+    e.target.classList.add('hide');
 }
 const menuEl = document.querySelector('.menu');
 menuEl.addEventListener('mouseover', menuAdd);

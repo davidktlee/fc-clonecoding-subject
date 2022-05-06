@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 /* HEADER */
-.header {
+header {
   width: 100%;
   background-color: $background-color;
   position: fixed;
@@ -252,7 +252,7 @@ header {
         border-right: 1px solid $hover-color;
         border-left: 1px solid $hover-color;
         border-top: 1px solid $hover-color;
-        .sub-menu__introduce {
+        .sub-menu {
           /* 여기 다섯가지 항목을 만들면서 뭔가 하나하나만드는 느낌이 이상함 */
           flex-grow: 1;
           padding: 20px 0 0 20px;
@@ -262,53 +262,6 @@ header {
             display: block;
           }
 
-          li {
-            margin-top: 20px;
-          }
-        }
-        .sub-menu__association {
-          flex-grow: 1;
-          padding: 20px 0 0 20px;
-          width: 150px;
-          border-right: 1px solid $hover-color;
-          h3 {
-            display: block;
-          }
-          li {
-            margin-top: 20px;
-          }
-        }
-        .sub-menu__vision {
-          flex-grow: 1;
-          padding: 20px 0 0 20px;
-          width: 150px;
-          border-right: 1px solid $hover-color;
-          h3 {
-            display: block;
-          }
-          li {
-            margin-top: 20px;
-          }
-        }
-        .sub-menu__nfc {
-          flex-grow: 1;
-          padding: 20px 0 0 20px;
-          width: 150px;
-          border-right: 1px solid $hover-color;
-          h3 {
-            display: block;
-          }
-          li {
-            margin-top: 20px;
-          }
-        }
-        .sub-menu__download {
-          flex-grow: 1;
-          padding: 20px 0 0 20px;
-          width: 150px;
-          h3 {
-            display: block;
-          }
           li {
             margin-top: 20px;
           }

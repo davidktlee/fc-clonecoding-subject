@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-.header {
+header {
   width: 100%;
   height: 120px;
   z-index: 15;
@@ -34,11 +34,11 @@ a {
   position: fixed;
 }
 
-.header .inner {
+header .inner {
   background-color: #e6002d;
 }
 
-.header .inner a img {
+header .inner a img {
   width: 190px;
   height: 90px;
   margin: 15px 50px 10px 10px;
@@ -267,77 +267,18 @@ header .menu .menu-list__KFA .inner {
   left: 50%;
 }
 
-header .menu .menu-list__KFA .inner .sub-menu__introduce {
+header .menu .menu-list__KFA .inner .sub-menu {
   width: 150px;
   border-right: 1px solid #840028;
   flex-grow: 1;
   padding: 20px 0 0 20px;
 }
 
-header .menu .menu-list__KFA .inner .sub-menu__introduce h3 {
+header .menu .menu-list__KFA .inner .sub-menu h3 {
   display: block;
 }
 
-header .menu .menu-list__KFA .inner .sub-menu__introduce li {
-  margin-top: 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__association {
-  width: 150px;
-  border-right: 1px solid #840028;
-  flex-grow: 1;
-  padding: 20px 0 0 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__association h3 {
-  display: block;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__association li {
-  margin-top: 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__vision {
-  width: 150px;
-  border-right: 1px solid #840028;
-  flex-grow: 1;
-  padding: 20px 0 0 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__vision h3 {
-  display: block;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__vision li {
-  margin-top: 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__nfc {
-  width: 150px;
-  border-right: 1px solid #840028;
-  flex-grow: 1;
-  padding: 20px 0 0 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__nfc h3 {
-  display: block;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__nfc li {
-  margin-top: 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__download {
-  width: 150px;
-  flex-grow: 1;
-  padding: 20px 0 0 20px;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__download h3 {
-  display: block;
-}
-
-header .menu .menu-list__KFA .inner .sub-menu__download li {
+header .menu .menu-list__KFA .inner .sub-menu li {
   margin-top: 20px;
 }
 
